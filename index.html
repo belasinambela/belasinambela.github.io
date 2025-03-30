@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeduliAnak - Pusat Informasi Kesehatan Anak</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header dengan warna gradient -->
+    <header class="header-gradient">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <h1>Peduli<span>Anak</span></h1>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+                        <li><a href="#penyakit"><i class="fas fa-book-medical"></i> Ensiklopedia</a></li>
+                        <li><a href="expert-system/diagnosis.html"><i class="fas fa-diagnosis"></i> Diagnosis</a></li>
+                        <li><a href="#video"><i class="fas fa-video"></i> Video Edukasi</a></li>
+                        <li><a href="#forum"><i class="fas fa-comments"></i> Forum</a></li>
+                        <li><a href="admin/dashboard.html" class="admin-link"><i class="fas fa-user-shield"></i>
+                                Admin</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="hero" id="home">
+                <div class="hero-text">
+                    <h2>Informasi Kesehatan Anak yang Terpercaya</h2>
+                    <p>Dari dokter anak untuk orang tua peduli</p>
+                    <div class="hero-buttons">
+                        <a href="expert-system/diagnosis.html" class="btn-primary">
+                            <i class="fas fa-diagnosis"></i> Diagnosis Sekarang
+                        </a>
+                        <a href="#emergency" class="btn-secondary">
+                            <i class="fas fa-phone-alt"></i> Darurat
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/public/assets/img/gambar1.jpeg" alt="Dokter dan Anak">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fitur Unggulan -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card" onclick="location.href='expert-system/diagnosis.html'">
+                <div class="feature-icon" style="background-color: #FF9AA2;">
+                    <i class="fas fa-diagnosis"></i>
+                </div>
+                <h3>Diagnosis Penyakit</h3>
+                <p>Deteksi dini masalah pencernaan anak Anda</p>
+            </div>
+            <div class="feature-card" onclick="location.href='#penyakit'">
+                <div class="feature-icon" style="background-color: #FFB7B2;">
+                    <i class="fas fa-book-medical"></i>
+                </div>
+                <h3>Ensiklopedia</h3>
+                <p>Informasi lengkap penyakit pencernaan anak</p>
+            </div>
+            <div class="feature-card" onclick="location.href='#video'">
+                <div class="feature-icon" style="background-color: #FFDAC1;">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Video Edukasi</h3>
+                <p>Panduan praktis dari dokter spesialis</p>
+            </div>
+            <div class="feature-card" onclick="location.href='#forum'">
+                <div class="feature-icon" style="background-color: #E2F0CB;">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Forum Diskusi</h3>
+                <p>Berbagi pengalaman dengan orang tua lain</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penyakit Populer -->
+    <section class="diseases" id="penyakit">
+        <div class="container">
+            <h2 class="section-title">Penyakit Pencernaan Anak</h2>
+            <p class="section-subtitle">Kenali gejala dan penanganan penyakit pencernaan yang umum pada anak</p>
+
+            <div class="disease-tabs">
+                <button class="tab-btn active" data-category="all">Semua</button>
+                <button class="tab-btn" data-category="bayi">Bayi (0-1 thn)</button>
+                <button class="tab-btn" data-category="balita">Balita (1-5 thn)</button>
+                <button class="tab-btn" data-category="anak">Anak (>5 thn)</button>
+            </div>
+
+            <div class="disease-grid">
+                <!-- Item penyakit akan diisi oleh JavaScript -->
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="expert-system/diagnosis.html" class="btn-primary">
+                    <i class="fas fa-diagnosis"></i> Diagnosis Penyakit Anak Anda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistem Pakar Section -->
+    <section class="expert-system-section" style="background-color: #4A6FA5; padding: 80px 0; color: white;">
+        <div class="container">
+            <div class="flex-container" style="display: flex; align-items: center; gap: 50px;">
+                <div class="flex-item" style="flex: 1;">
+                    <h2 style="font-size: 2rem; margin-bottom: 20px;">Sistem Pakar Diagnosis</h2>
+                    <p style="margin-bottom: 25px; font-size: 1.1rem;">
+                        Gunakan sistem pakar kami untuk membantu mengidentifikasi masalah pencernaan yang mungkin
+                        dialami anak Anda berdasarkan gejala yang muncul.
+                    </p>
+                    <ul style="margin-bottom: 30px; padding-left: 20px;">
+                        <li style="margin-bottom: 10px;">Deteksi dini penyakit pencernaan</li>
+                        <li style="margin-bottom: 10px;">Rekomendasi penanganan pertama</li>
+                        <li style="margin-bottom: 10px;">Informasi pencegahan</li>
+                        <li style="margin-bottom: 10px;">Hasil dengan tingkat akurasi tinggi</li>
+                    </ul>
+                    <a href="expert-system/diagnosis.html" class="btn-secondary"
+                        style="background: white; color: #4A6FA5;">
+                        <i class="fas fa-diagnosis"></i> Coba Sekarang
+                    </a>
+                </div>
+                <div class="flex-item" style="flex: 1;">
+                    <img src="assets/img/diagnosis-illustration.png" alt="Ilustrasi Diagnosis"
+                        style="width: 100%; border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Edukasi -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Video Edukasi</h2>
+            <p class="section-subtitle">Belajar dari video panduan dokter spesialis anak</p>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="assets/img/video-thumb-1.jpg" alt="Video Demam">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>Cara Mengatasi Diare pada Anak</h3>
+                    <p>Dr. Sarah Wijaya, Sp.A</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="assets/img/video-thumb-2.jpg" alt="Video Diare">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>Penanganan Muntah pada Bayi</h3>
+                    <p>Dr. Budi Santoso, Sp.A</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="assets/img/video-thumb-3.jpg" alt="Video Alergi">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>Mengenal Gejala Alergi Makanan</h3>
+                    <p>Dr. Ani Rahmawati, Sp.A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Dapatkan Info Terbaru</h2>
+                <p>Berlangganan newsletter kami untuk informasi kesehatan anak terkini</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Alamat email Anda" required>
+                    <button type="submit">Berlangganan <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Peduli<span>Anak</span></h3>
+                    </div>
+                    <p>Platform informasi kesehatan anak terpercaya yang dikembangkan bersama dokter spesialis anak.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#penyakit">Ensiklopedia</a></li>
+                        <li><a href="expert-system/diagnosis.html">Diagnosis</a></li>
+                        <li><a href="#video">Video Edukasi</a></li>
+                        <li><a href="#forum">Forum</a></li>
+                        <li><a href="admin/dashboard.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-envelope"></i> info@pedulianak.id</p>
+                    <p><i class="fas fa-phone-alt"></i> (021) 1234-5678</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PeduliAnak. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

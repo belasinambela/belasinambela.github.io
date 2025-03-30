@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Diagnosis - PeduliAnak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="admin-nav">
+                <div class="admin-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>PeduliAnak Admin</span>
+                </div>
+                <div class="admin-nav-links">
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Container -->
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <ul class="admin-sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="history.html" class="active"><i class="fas fa-history"></i> Riwayat Diagnosis</a></li>
+                <li><a href="#"><i class="fas fa-disease"></i> Penyakit</a></li>
+                <li><a href="#"><i class="fas fa-stethoscope"></i> Gejala</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Pengguna</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <h2>Riwayat Diagnosis</h2>
+
+            <div class="history-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Usia</th>
+                            <th>Gejala</th>
+                            <th>Hasil Diagnosis</th>
+                            <th>Akurasi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <!-- Data riwayat akan diisi oleh JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
